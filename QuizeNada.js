@@ -134,10 +134,9 @@ events
 fetch/axios
 8- write a code that will make a request to 'https://jsonplaceholder.typicode.com/todos/1' and console log the title and completed keys from the response
 */
-etch("https://jsonplaceholder.typicode.com/todos/1")
+fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((res) => res.json())
-  .then((data) => {
+  .then(() => {
     
   })
   .catch((err) => console.log(err));
-  
