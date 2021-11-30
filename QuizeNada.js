@@ -23,16 +23,16 @@ sessionStorage.setItem("food", JSON.stringify(food));
 
 const cars = {
     mercedes: {
-      country: "Germany",
-      models: ["G class", "GLK", "SLC"],
+      country: "KSA",
+      models: ["jeep"],
     },
     toyota: {
-      country: "Japan",
-      models: ["Camry", "Corolla", "Avalon"],
+      country: "USA",
+      models: ["Corolla"],
     },
     ford: {
-      country: "America",
-      models: ["Mustang", "Explorer", "Raptor"],
+      country: "JABAN",
+      models: ["ford"],
     },
   };
   localStorage.setItem("cars", JSON.stringify(cars))
@@ -61,7 +61,7 @@ const addFood = function (meal) {
   };
   
   addFood("shawarma");
-  addFood("fried chicken");
+  
 
 /* ex: 
 addFood("shawarma") -> ["burger", "kabsa", "spaghetti", "pizza", "shawarma"] 
@@ -137,8 +137,7 @@ fetch/axios
 etch("https://jsonplaceholder.typicode.com/todos/1")
   .then((res) => res.json())
   .then((data) => {
-    console.log(`Title is: ${data.title}`);
-    console.log(`Completed keys is: ${data.completed}`);
+    
   })
   .catch((err) => console.log(err));
-  u
+  
