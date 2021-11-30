@@ -44,7 +44,7 @@ using index 1 in the model array: "[car model] is made by [car] in [country]"  *
 
 const getCar = function (car) {
     const cars = JSON.parse(localStorage.getItem("cars"));
-    return (`${cars[car].models[1]} is made by ${car} in ${cars[car]["country"]}`);
+    return (`${cars[car].models[1]} is made by ${car} in ${cars[car][country]}`);
   };
 
 
@@ -60,7 +60,7 @@ const addFood = function (meal) {
     sessionStorage.setItem("food", JSON.stringify(Meals));
   };
   
-  addFood("shawarma");
+  addFood("Foods");
   
 
 /* ex: 
